@@ -1,0 +1,31 @@
+{
+  "extensionName": {
+    "message": "Boycott Penguin",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Helps users to identify and track boycotted brands and domains.",
+    "description": "Description of the extension."
+  },
+  "errorLoadUserPreferences": {
+    "message": "Failed to load user preferences."
+  },
+  "errorLoadBoycottList": {
+    "message": "Failed to load boycott lists."
+  },
+  "errorDetectPage": {
+    "message": "Could not detect the current page."
+  },
+  "errorLoadAlerts": {
+    "message": "Failed to load alerts."
+  },
+  "errorNoSubscribed": {
+    "message": "No boycott lists subscribed. Please subscribe to lists in the Lists tab."
+  },
+  "errorScan": {
+    "message": "An error occurred while scanning the page"
+  },
+  "popupScan": {
+    "message": "Scanning page..."
+  }
+}

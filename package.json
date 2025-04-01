@@ -1,0 +1,56 @@
+{
+  "name": "boykot-penguen",
+  "displayName": "__MSG_extensionName__",
+  "version": "1.0.0",
+  "description": "__MSG_extensionDescription__",
+  "author": "Boykot Penguen",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build:chrome": "plasmo build --target=chrome-mv3",
+    "build:ff": "plasmo build --target=firefox-mv3",
+    "build:edge": "plasmo build --target=edge-mv3",
+    "build:brave": "plasmo build --target=brave-mv3",
+    "build:opera": "plasmo build --target=opera-mv3",
+    "package:chrome": "plasmo package --target=chrome-mv3",
+    "package:ff": "plasmo package --target=firefox-mv3",
+    "package:edge": "plasmo package --target=edge-mv3",
+    "package:brave": "plasmo package --target=brave-mv3",
+    "package:opera": "plasmo package --target=opera-mv3"
+  },
+  "type": "module",
+  "dependencies": {
+    "@plasmohq/messaging": "^0.7.1",
+    "@plasmohq/storage": "1.15.0",
+    "@types/webextension-polyfill": "^0.12.3",
+    "plasmo": "0.90.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "4.1.1",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "prettier": "3.2.4",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "name": "__MSG_extensionName__",
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "default_locale": "en",
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{ed7ba470-8e54-465e-825c-99712043e01c}"
+      }
+    }
+  }
+}

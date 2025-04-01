@@ -1,0 +1,19 @@
+{
+  "extensionName": {
+    "message": "Boykot Penguen",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Boykot edilen markaları ve alan adlarını tanımlamasına ve uyarılar almasına yardımcı olur.",
+    "description": "Description of the extension."
+  },
+  "errorLoadUserPreferences": {
+    "message": "Ayarlar yüklenirken hata oldu."
+  },
+  "errorLoadBoycottList": {
+    "message": "Boykot listesi yüklenirken hata oldu."
+  },
+  "errorDetectPage": {
+    "message": "Mevcut sayfa tespit edilemedi."
+  }
+}
