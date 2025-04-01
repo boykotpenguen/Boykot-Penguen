@@ -36,12 +36,25 @@ export const scanPageForDomains = (domains: Filter[]): Filter[] => {
  * Text matching for brand detection
  */
 const createMatcher = (brands: Filter[]) => {
-  const rules = brands.map((brand) => brand.rule.toLowerCase());
+  if (!brands.length) return { findMatches: () => [] };
+
+  const pattern = brands
+    .map(brand => {
+      const escapedRule = brand.rule.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      return `\\b${escapedRule}\\b`;
+    })
+    .join('|');
+
+  const regex = new RegExp(pattern, 'gi');
 
   return {
     findMatches: (text: string): Filter[] => {
-      const lowerText = text.toLowerCase();
-      return brands.filter((_, i) => lowerText.includes(rules[i]));
+      if (!text || text.length < 3) return [];
+      
+      const matches = text.match(regex) || [];
+      const matchedTexts = new Set(matches.map(m => m.toLowerCase()));
+      
+      return brands.filter(brand => matchedTexts.has(brand.rule.toLowerCase()));
     }
   };
 };
