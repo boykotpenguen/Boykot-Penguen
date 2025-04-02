@@ -31,11 +31,6 @@ export async function checkAndUpdateLists(): Promise<void> {
         }
 
         const importedLists = (await response.json()) as BoycottList[];
-        if (!Array.isArray(importedLists)) {
-          error("Invalid list format");
-          continue;
-        }
-
         const storageData = await getStorageData();
 
         for (const importedList of importedLists) {
@@ -52,6 +47,7 @@ export async function checkAndUpdateLists(): Promise<void> {
               ...importedList,
               lastUpdated: now.toISOString()
             });
+            storageData.userPreferences.subscribedLists.push(importedList.id);
           }
         }
 

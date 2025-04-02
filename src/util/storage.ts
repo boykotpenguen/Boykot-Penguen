@@ -13,11 +13,13 @@ const storage = new Storage({
 });
 
 const DEFAULT_USER_PREFERENCES: UserPreferences = {
-  autoUpdate: false,
+  autoUpdate: true,
   updateInterval: 24,
   subscribedLists: [],
   lastAutoUpdate: undefined,
-  importUrls: [],
+  importUrls: [
+    "https://raw.githubusercontent.com/boykotpenguen/boycott-lists/refs/heads/master/default.json"
+  ],
   notificationSettings: {
     showOnPageLoad: true,
     showBanner: true,
