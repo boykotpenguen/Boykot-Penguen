@@ -81,12 +81,12 @@ pnpm build:ff
 
 ```
 src/
-├── 
+├──
 ├── content.tsx        # Sayfayı editleyen script
 ├── popup.tsx          # Eklenti popup sayfası
 ├── options.tsx        # Liste yönetimi sayfası
 └── *.module.css       # Stiller
-    background/      
+    background/
     └── index.ts       # Eklenti background scripti
     util/
     ├── autoUpdate.ts       # Auto-update functionality

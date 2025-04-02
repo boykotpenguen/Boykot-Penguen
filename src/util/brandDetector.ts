@@ -39,22 +39,26 @@ const createMatcher = (brands: Filter[]) => {
   if (!brands.length) return { findMatches: () => [] };
 
   const pattern = brands
-    .map(brand => {
-      const escapedRule = brand.rule.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    .map((brand) => {
+      const escapedRule = brand.rule
+        .toLowerCase()
+        .replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       return `\\b${escapedRule}\\b`;
     })
-    .join('|');
+    .join("|");
 
-  const regex = new RegExp(pattern, 'gi');
+  const regex = new RegExp(pattern, "gi");
 
   return {
     findMatches: (text: string): Filter[] => {
       if (!text || text.length < 3) return [];
-      
+
       const matches = text.match(regex) || [];
-      const matchedTexts = new Set(matches.map(m => m.toLowerCase()));
-      
-      return brands.filter(brand => matchedTexts.has(brand.rule.toLowerCase()));
+      const matchedTexts = new Set(matches.map((m) => m.toLowerCase()));
+
+      return brands.filter((brand) =>
+        matchedTexts.has(brand.rule.toLowerCase())
+      );
     }
   };
 };

@@ -81,12 +81,12 @@ pnpm build:ff
 
 ```
 src/
-├── 
+├──
 ├── content.tsx        # Content script for page injection
 ├── popup.tsx          # Extension popup interface
 ├── options.tsx        # Options page for list management
 └── *.module.css       # CSS modules for styling
-    background/      
+    background/
     └── index.ts       # Background script for extension
     util/
     ├── autoUpdate.ts       # Auto-update functionality
