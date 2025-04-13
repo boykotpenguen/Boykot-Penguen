@@ -1,6 +1,19 @@
-# Boykot Penguen Tarayıcı Eklentisi
-
-Boykot Penguen, kullanıcıların boykot edilen markaları ve alan adlarını tanımlamasına ve uyarılar almasına yardımcı olan bir tarayıcı eklentisidir. Kullanıcıların boykot listelerini yönetmelerine de olanak tanır.
+<p align="center">
+    <img width="250" alt="Boykot Penguen" src="assets/icon.png">
+</p>
+<br/>
+<p align="center">
+    <a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/boykot-penguen/">
+        <img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a> 
+    <a rel="noreferrer noopener" href="https://microsoftedge.microsoft.com/addons/detail/boykot-penguen/neabmbkmmhldpooeggijjfkdknbabgih">
+        <img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white">
+    </a>
+</p>
+<h2 align="center">Boykot Penguen</h2>
+<br/>
+<p align="center">Boykot Penguen, kullanıcıların boykot edilen markaları ve alan adlarını tanımlamasına ve uyarılar almasına yardımcı olan bir tarayıcı eklentisidir. Kullanıcılar kendi boykot listelerini oluşturabilir, var olan listelere abone olabilir.</p>
+<br/>
+<br/>
 
 ## Özellikler
 
@@ -13,7 +26,7 @@ Boykot Penguen, kullanıcıların boykot edilen markaları ve alan adlarını ta
 
 ## Kullanım
 
-Henüz Firefox ve Chrome'un kendi uzantı sayfalarına eklenmediği için manuel kurulum gerekmektedir. Releases bölümünden derlenmiş versiyonu indirebilir veya projeyi klonlayıp [Kurulum](#kurulum) kısmını takip ederek kendiniz projeyi derleyebilirsiniz. Tarayıcıya eklemek için [tarayıcı](#tarayıcıya-eklemek) kısmına bakabilirsiniz.
+Firefox ve Edge için kendi mağaza sayfalarından tarayıcınıza ekleyebilirsiniz. Henüz Chrome'un kendi uzantı mağazasına eklenmediği için manuel kurulum gerekmektedir. Releases bölümünden derlenmiş versiyonu indirebilir veya projeyi klonlayıp [Kurulum](#kurulum) kısmını takip ederek kendiniz projeyi derleyebilirsiniz. Tarayıcıya eklemek için [tarayıcı](#tarayıcıya-eklemek) kısmına bakabilirsiniz.
 
 ### Liste Yönetimi
 
