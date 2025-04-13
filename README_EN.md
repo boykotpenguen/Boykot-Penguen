@@ -1,6 +1,19 @@
-# Boykot Penguen Browser Extension
-
-Boykot Penguen is a browser extension that helps users identify and track boycotted brands and domains. It provides real-time notifications when users visit websites associated with boycotted entities and allows users to manage their boycott lists.
+<p align="center">
+    <img width="250" alt="Boycott Penguin" src="assets/icon.png">
+</p>
+<br/>
+<p align="center">
+    <a rel="noreferrer noopener" href="https://addons.mozilla.org/firefox/addon/boykot-penguen/">
+        <img alt="Firefox Add-ons" src="https://img.shields.io/badge/Firefox-141e24.svg?&style=for-the-badge&logo=firefox-browser&logoColor=white"></a> 
+    <a rel="noreferrer noopener" href="https://microsoftedge.microsoft.com/addons/detail/boykot-penguen/neabmbkmmhldpooeggijjfkdknbabgih">
+        <img alt="Edge Addons" src="https://img.shields.io/badge/Edge-141e24.svg?&style=for-the-badge&logo=microsoft-edge&logoColor=white">
+    </a>
+</p>
+<h2 align="center">Boycott Penguin</h2>
+<br/>
+<p align="center">Boycott Penguin is a browser extension that helps users identify and track boycotted brands and domains. It provides real-time notifications when users visit websites associated with boycotted entities and allows users to manage their boycott lists.</p>
+<br/>
+<br/>
 
 ## Features
 
@@ -13,7 +26,7 @@ Boykot Penguen is a browser extension that helps users identify and track boycot
 
 ## Usage
 
-Since it has not yet been added to Firefox and Chrome's own extension pages, manual installation is required. You can download the compiled version from the Releases section or clone the project and compile the project yourself by following the [Installation](#installation) section. To add it to the browser, see the [browser](#add-to-browser) section.
+You can add it to your browser from their store pages for Firefox and Edge. Since it has not yet been added to Chrome's own extension pages, manual installation is required. You can download the compiled version from the Releases section or clone the project and compile the project yourself by following the [Installation](#installation) section. To add it to the browser, see the [browser](#add-to-browser) section.
 
 ### Managing Lists
 
